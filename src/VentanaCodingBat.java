@@ -6,7 +6,11 @@
 
 /**
  *
- * @author xp
+ * @author Pepe Zhu
+ * Proyecto : No23
+ * Comentario general :Dada una longitud int matriz 2,
+ *                     devolver VERDADERO si no contiene un 2 o 3.
+ *                     Si contiene un 2 o 3 ,devolver FALSO.
  */
 public class VentanaCodingBat extends javax.swing.JFrame {
 
@@ -17,11 +21,14 @@ public class VentanaCodingBat extends javax.swing.JFrame {
         initComponents();
     }
     public boolean no23(int[] nums) {
- if ( (nums[0]  != 2  ) &&  (nums[1]  != 2  ) &&  (nums[0]  != 3  ) &&  (nums[1]  != 3  ) ){
+        //Cuando el primer numero que  no sea 2 ni 3 Y el segundo numero
+        // tampoco sea 2 ni 3 ,devuelve VERDADERO. 
+        //Si fuera de estos condiciones ,devuelve FALSO.
+     if ( (nums[0]  != 2  ) &&  (nums[1]  != 2  ) &&  (nums[0]  != 3  ) &&  (nums[1]  != 3  ) ){
      return true;
-   }
-   else  return false;
-}
+        }
+     else  return false;
+     }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -110,34 +117,50 @@ public class VentanaCodingBat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
- int listanumeros [] = {4,5};
-   if(no23(listanumeros)){
+     //En los siquientes codigos para que funciona jlabel1 y el jlabel1 juzga 
+     // que es VERDADEO o FALSO.
+     //En este caso ,devuelve VERDADERO,porque /Cuando no contiene el numero 2 o 3 ,
+     // devuleve VERDADERO.
+     
+     
+       int listanumeros [] = {4,5};
+       if(no23(listanumeros)){
        jLabel1.setText("VERDADERO");
-   }
-   else{
+        }
+    else{
        jLabel1.setText("FALSE");
-   }
+        }
     }//GEN-LAST:event_jButton1MousePressed
 
     private void jButton2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MousePressed
-                int listanumeros2 [] = {4,2};
-
-   if(no23(listanumeros2)){
+     //En los siquientes codigos para que funciona jlabel2 y el jlabel2 juzga 
+     // que es VERDADEO o FALSO.
+     //En este caso ,devuelve FALSO,porque Cuando  contiene el numero 2 o 3 ,
+     // devuleve FALSO.      
+       
+     int listanumeros2 [] = {4,2};
+     
+     if(no23(listanumeros2)){
        jLabel2.setText("VERDADERO");
-   }
-   else{
-       jLabel2.setText("FALSE");
-   }
+      }
+      else{
+       jLabel2.setText("FALSO");
+       }
     }//GEN-LAST:event_jButton2MousePressed
 
     private void jButton3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MousePressed
-        int listanumeros3 [] = {3,5};
-   if(no23(listanumeros3)){
+     //En los siquientes codigos para que funciona jlabel3 y el jlabel3 juzga 
+     // que es VERDADEO o FALSO.
+     //En este caso ,devuelve FALSO,porque Cuando  contiene el numero 2 o 3 ,
+     // devuleve FALSO.
+      int listanumeros3 [] = {3,5};
+    
+      if(no23(listanumeros3)){
        jLabel3.setText("VERDADERO");
-   }
-   else{
-       jLabel3.setText("FALSE");
-   }
+      }
+       else{
+       jLabel3.setText("FALSO");
+       }
     }//GEN-LAST:event_jButton3MousePressed
 
     /**
